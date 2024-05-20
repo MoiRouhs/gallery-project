@@ -4,7 +4,7 @@ import imgViolentCop from '../images/violent-cop.jpg';
 const ViolentCop = ()=>{
     return(
         <div>
-          <img alt="caratula pelicula Violent Cop" src={imgviolentCop} />  
+          <img alt="caratula pelicula Violent Cop" src={imgViolentCop} />  
         </div>
     );
 };
