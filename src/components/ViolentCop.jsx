@@ -1,10 +1,10 @@
 import React from 'react';
 import imgViolentCop from '../images/violent-cop.jpg';
 
-const ViolentCop = ()=>{
+const ViolentCop = ({ argClass })=>{
     return(
         <div>
-          <img alt="caratula pelicula Violent Cop" src={imgViolentCop} />  
+          <img className={ argClass } alt="caratula pelicula Violent Cop" src={imgViolentCop} />  
         </div>
     );
 };

@@ -1,10 +1,10 @@
 import React from 'react';
 import imgHanaBi from '../images/hana-bi.jpg';
 
-const HanaBi = ()=>{
+const HanaBi = ({argClass})=>{
     return(
         <div>
-           <img alt="caratula pelicula Hana-bi" src={imgHanaBi} />          
+           <img className={argClass} alt="caratula pelicula Hana-bi" src={imgHanaBi} />          
         </div>
     );
 };

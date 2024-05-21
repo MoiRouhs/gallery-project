@@ -9,35 +9,35 @@ import Zatoichi from './Zatoichi';
 
 const Navigation = ()=>{
     return(
-        <div>
-          <Link to="/brother">
-            <figure>
-              <Brother/>
-              <fogcaption>Brother</fogcaption>
+        <div className="relative m-5 z-10 grid gap-3">
+          <Link to="/brother" className="text-center">
+            <figure className="max-w-20">
+              <Brother argClass='rounded-xl shadow-lg shadow-black hover:sepia'/>
+              <fogcaption className="hidden">Brother</fogcaption>
             </figure>
           </Link>
-          <Link to="/dolls">
-            <figure>
-              <Dolls/>
-              <fogcaption>Dolls</fogcaption>
+          <Link to="/dolls" className="text-center">
+            <figure className="max-w-20">
+              <Dolls argClass='rounded-xl  shadow-lg shadow-black hover:sepia'/>
+              <fogcaption className="hidden">Dolls</fogcaption>
             </figure>
           </Link>
-          <Link to="/hanabi">
-            <figure>
-              <HanaBi/>
-              <fogcaption>Hana-bi</fogcaption>
+          <Link to="/hanabi" className="text-center">
+            <figure className="max-w-20">
+              <HanaBi argClass='rounded-xl shadow-lg shadow-black hover:sepia'/>
+              <fogcaption className="hidden">Hana-bi</fogcaption>
             </figure>
           </Link>
-          <Link to="/violentcop">
-            <figure>
-              <ViolentCop/>
-              <fogcaption>Violent Cop</fogcaption>
+          <Link to="/violentcop" className="text-center">
+            <figure className="max-w-20">
+              <ViolentCop argClass='rounded-xl shadow-lg shadow-black hover:sepia'/>
+              <fogcaption className="hidden">Violent Cop</fogcaption>
             </figure>
           </Link>
-          <Link to="/zatoichi">
-            <figure>
-              <img alt="" src={Zatoichi} />
-              <fogcaption>Zatoichi</fogcaption>
+          <Link to="/zatoichi" className="text-center">
+            <figure className="max-w-20">
+              <Zatoichi argClass='rounded-xl shadow-lg shadow-black hover:sepia'/>
+              <fogcaption className="hidden">Zatoichi</fogcaption>
             </figure>
           </Link>
         </div>

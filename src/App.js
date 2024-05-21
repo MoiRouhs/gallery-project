@@ -9,16 +9,20 @@ import Navigation from './components/Navigation';
 
 function App() {
   return (
+    <div className="flex justify-center">
       <Router>
-        <Routes>
-          <Route path="/brother" element={<Brother/>} />
-          <Route path="/dolls" element={<Dolls/>} />
-          <Route path="/hanabi" element={<HanaBi/>} />
-          <Route path="/violentcop" element={<ViolentCop/>} />
-          <Route path="/zatoichi" element={<Zatoichi/>} />
-        </Routes>
         <Navigation/>
+        <div className="relative">
+          <Routes>
+            <Route path="/brother" element={<Brother argClass='h-lvh'/>} />
+            <Route path="/dolls" element={<Dolls argClass='h-lvh'/>} />
+            <Route path="/hanabi" element={<HanaBi argClass='h-lvh'/>} />
+            <Route path="/violentcop" element={<ViolentCop argClass='h-lvh'/>} />
+            <Route path="/zatoichi" element={<Zatoichi argClass='h-lvh'/>} />
+          </Routes>
+        </div>
       </Router>
+    </div>
   );
 }
 export default App;

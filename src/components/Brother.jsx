@@ -1,10 +1,10 @@
 import React from 'react';
 import imgBrother from '../images/brother.webp';
 
-const Brother = ()=>{
+const Brother = ({ argClass })=>{
     return(
         <div>
-           <img alt="caratula pelicula Brother" src={imgBrother} />         
+           <img className={argClass} alt="caratula pelicula Brother" src={imgBrother} />         
         </div>
     );
 };
